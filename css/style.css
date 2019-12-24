@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url('https://i.pinimg.com/originals/cb/a9/3e/cba93ec7dd3a50a13b6492a5339621b2.jpg');
+  background-repeat: no-repeat;
+  background-position: 100% 20%;
+  background-size: 100%;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 10px;
+  color: purple;
+  font-size: 60px;
+}
+
+
+.cherries {
+  background-image: url(https://www.tornado-studios.com/sites/default/files/styles/slider_full/public/products/2103/reel-360-1/video-slot-machine-cherries-0000.jpg?itok=2QxlZaU8);
+}
+
+.seven {
+  background-image: url(https://static.turbosquid.com/Preview/001320/669/R8/_Z.jpg);
+
+}
+
+.banana {
+  background-image: url(https://static.turbosquid.com/Preview/001320/668/7S/_Z.jpg);
+}
+
+.melon {
+  background-image: url(https://static.turbosquid.com/Preview/001320/677/ZC/_Z.jpg);
+}
+
+.bell {
+  background-image: url(https://static.turbosquid.com/Preview/001320/670/S9/_D.jpg);
+
+}
+
+#container {
+  background-color: #F7F7F7;
+  display: flex;
+  justify-content: center;
+  height: 415px;
+  width: 70%;
+  margin: 50px auto;
+}
+
+#image-left,
+#image-center,
+#image-right {
+  width: calc(80vw / 3);
+  height: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 5px solid black;
+  outline: 5px solid black;
+}
+
+#image-center {
+  padding: 0 50px;
+}
+
+.button-container {
+  width: 70%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+#gioca {
+  color: purple;
+  font-size: 40px;
+  padding: 5px;
+  background-color: yellow;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.hidden {
+  opacity: 0;
+  transition: 1s;
+}
+
+.visible {
+  opacity: 1;
+  transition: 1s;
+}
+
+.esito-wrap {
+  text-align: center;
+}
+
+#esito {
+  font-size: 40px;
+}
+
+#tentativi {
+  font-size: 24px;
+}

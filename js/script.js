@@ -4,16 +4,16 @@ var RandomNumRight;
 var count = 0;
 var Gioca = document.getElementById('gioca');
 var Tentativi = document.getElementById('tentativi');
-
+Gioca.onclick = function(){
+count++;
+Tentativi.innerHTML = 'Tentativi: ' + count;
+}
 
 Gioca.addEventListener('click',
 function () {
 document.getElementById('container').className = 'visible'
 document.getElementById('title').className = 'hidden'
-Gioca.onclick = function(){
-count++;
-Tentativi.innerHTML = 'Tentativi: ' + count;
-}
+
 console.log(Tentativi.innerHTML);
 RandomNumLeft = Math.floor(Math.random() * 5);
 if (RandomNumLeft == 0) {
@@ -41,7 +41,7 @@ if (RandomNumCenter == 0) {
   document.getElementById('image-center').className = 'bell';
 }
 
-RandomNumRight = Math.floor(Math.random() * 5);
+RandomNumRight = Math.floor(Math.random() * 5); console.log(RandomNumRight);
 if (RandomNumRight == 0) {
  document.getElementById('image-right').className = 'cherries';
 } else if (RandomNumRight == 1) {
@@ -50,7 +50,7 @@ if (RandomNumRight == 0) {
   document.getElementById('image-right').className = 'banana';
 } else if (RandomNumRight == 3) {
   document.getElementById('image-right').className = 'melon';
-} else if (RandomNumCenter == 4){
+} else if (RandomNumRight == 4){
   document.getElementById('image-right').className = 'bell';
 }
 

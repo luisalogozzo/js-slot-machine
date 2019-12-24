@@ -15,7 +15,7 @@ body {
 h1 {
   text-align: center;
   margin-top: 10px;
-  color: purple;
+  color: orange;
   font-size: 60px;
 }
 
@@ -74,7 +74,7 @@ h1 {
 }
 
 #gioca {
-  color: purple;
+  color: orange;
   font-size: 40px;
   padding: 5px;
   background-color: yellow;
@@ -101,5 +101,7 @@ h1 {
 }
 
 #tentativi {
+  display: inline-block;
+  margin-top: 20px;
   font-size: 24px;
 }
